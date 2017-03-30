@@ -1,0 +1,72 @@
+.tokensOptions{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding:0 4em;
+    margin:2em;
+    height:100%;
+    border-radius: .5em;
+    /*background:rgba(255,255,255,.95);*/
+    text-align: center;
+    /*box-shadow: 0 0 .5em {{shadowColor}};*/
+    color:white;
+
+}
+
+.tokensOptions > p{
+    width:66%;
+    margin:0 17%;
+}
+
+.tokensOptions .prices{
+    display:flex;/*
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;*/
+}
+
+.tokensOptions .prices div{
+    display:flex;
+    width: 20%;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+    /*background: white;*/
+    opacity: .9;
+    padding: 1.5em 0;
+    color: white;
+    border:1px solid white;
+}
+.tokensOptions button{
+    font-size: 1.5em;
+    background: none;
+    border: 0;
+    color: white;
+    border-bottom: 1px solid white;
+    padding-bottom: 60px;
+}
+.prices p{
+    margin:0;
+}
+.prices hr{
+    width:50%;
+    color:white;
+    display:none;
+}
+.tokensOptions .prices figure.feature{
+    text-shadow:{{faintGreenShadow}};
+}
+
+.tokensOptions .prices h3::before{
+    /*content:'$';*/
+}
+
+.tokensOptions .prices figure > p {
+    font-size: .7em;
+}
+.discreet-copy{
+        margin: 2em 20%;
+}
+.discreet-copy img{
+        width: 100%;
+    padding: 1em 0;
+}

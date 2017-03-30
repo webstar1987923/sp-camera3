@@ -1,0 +1,64 @@
+.siteTop{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    height:3em;
+    line-height: 3em;
+    background:white;
+    transition:height:{{transitionTime}};
+}
+
+.siteTop h2{
+    line-height: 1.3em;
+    font-size:1em;
+    margin:0;
+    text-transform: uppercase;
+    cursor:pointer;
+    color:{{lightBlue}};
+}
+
+.siteTop h2 svg{
+    pointer-events:none;
+}
+
+.siteTop .loginOptions{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-end;
+}
+
+.siteTop a{
+    text-decoration:none;
+    margin:0 .5em;
+    color:{{lightBlue}};
+    cursor:pointer;
+}
+.siteTop button{
+    color:white;
+}
+
+.siteTop .userInfo > p{
+    padding: 0 .5em;
+    margin: 0;
+    font-weight:bold;
+    background: rgba(255,255,255,.75);
+    box-shadow: 0 0 .1em {{shadowColor}};
+    color:{{lightBlue}};
+}
+
+.siteTop .userTokens{
+    text-shadow:{{faintGreenShadow}};
+}
+
+.siteTop .userData{
+    width:2.5em;
+    overflow:hidden;
+    text-align:center;
+}
+
+.siteTop .userData img{
+    border-radius:50%;
+    width:100%;
+    margin:10% 0;
+    box-shadow: 0 0 .1em {{shadowColor}};
+}

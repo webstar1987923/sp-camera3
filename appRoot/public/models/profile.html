@@ -1,0 +1,110 @@
+<link rel='stylesheet' href='/public/models/models.css' />
+<section class='modelProfile'>
+    <article class='modelInfo'>
+        <aside class='modelCams'>
+
+        </aside>
+        <section class='profileContents'>
+
+        </section>
+        <button
+            class="indigo lighten-1 btn"
+            data-action='webRTC'
+            data-method='tipModel'
+        >Send tip</button>
+        <button
+            class="btn blue"
+            data-display='{{modelOnline}}'
+            data-action='webRTC'
+            data-method='requestPrivate'
+        >Go private</button>
+    </article>
+    {{chat}}
+</section>
+<template data-template='modelProfile'>
+    <h1>${userID}</h1>
+    <figure>
+        <img
+            alt='${userID} profile pic'
+            title='${userID} profile image'
+            src='{{profileImgsLink}}${profileImg}'
+        />
+        <figcaption>
+            <div>
+                online : ${online}
+                <br>
+                streaming : ${streaming}
+                <br>
+                gender : ${gender}
+            </div>
+        </figcaption>
+    </figure>
+</template>
+<dialog class='modelOffer'>
+    <h3>Request a Private Chat</h3>
+    <p>Make sure to make a good offer for the best chance of <em>getting private</em> with <span class='modelID'></span>!</p>
+    <form
+        data-action='webRTC'
+        data-method='makePrivateOffer'
+    >
+        <textarea placeholder='Type a sexy message to this hot model with a great offer.'></textarea>
+        <p>
+        <label for='perMinOffer'>
+            Tokens Per Min
+        </label>
+        <input
+            type='number'
+            name='perMinOffer'
+            min=0
+            step=1
+            placeholder='per min, best offer'
+        />
+        <br>
+        <label for='flatOffer'>
+            Tokens - Flat Rate
+        </label>
+        <input
+            name='flatRateOffer'
+            type='number'
+            min=0
+            step=1
+            placeholder='flat rate'
+        />
+        </p>
+        <button class="btn blue">
+            Make Offer
+        </button>
+    </form>
+    <button
+        class='closeButton btn'
+        data-action='app'
+        data-method='hideModelOfferUI'
+    >
+        Cancel
+    </button>
+</dialog>
+<dialog class='tipModel'>
+    <h1>Tip That Sexy Model</h1>
+    <form
+        data-action='api'
+        data-method='tip'
+    >
+        <input
+            id='tipTokens'
+            type='number'
+            min=1
+            step=1
+            value=10
+        />
+        <button class="btn blue">
+            Send tip!
+        </button>
+    </form>
+    <button
+        data-action='app'
+        data-method='hideModelTipUI'
+    >
+        Close
+    </button>
+</dialog>
+<script src='/public/models/profile.js'></script>

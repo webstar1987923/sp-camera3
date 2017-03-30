@@ -1,0 +1,15 @@
++-------------+-----------------------------+------+-----+----------+----------------+
+| Field       | Type                        | Null | Key | Default  | Extra          |
++-------------+-----------------------------+------+-----+----------+----------------+
+| id          | int(10) unsigned            | NO   | PRI | NULL     | auto_increment |
+| memberId    | int(11)                     | NO   |     | NULL     |                |
+| packageId   | int(11)                     | NO   |     | NULL     |                |
+| type        | varchar(30)                 | NO   |     | NULL     |                |
+| price       | int(11)                     | NO   |     | NULL     |                |
+| description | text                        | NO   |     | NULL     |                |
+| parameters  | text                        | NO   |     | NULL     |                |
+| accessTime  | int(11)                     | NO   |     | NULL     |                |
+| status      | enum('approved','rejected') | NO   |     | approved |                |
+| createdAt   | datetime                    | NO   |     | NULL     |                |
+| updatedAt   | datetime                    | NO   |     | NULL     |                |
++-------------+-----------------------------+------+-----+----------+----------------+

@@ -1,0 +1,12 @@
++-----------+----------------------------------------+------+-----+------------+----------------+
+| Field     | Type                                   | Null | Key | Default    | Extra          |
++-----------+----------------------------------------+------+-----+------------+----------------+
+| id        | bigint(20) unsigned                    | NO   | PRI | NULL       | auto_increment |
+| ownerId   | int(11)                                | NO   |     | NULL       |                |
+| item      | varchar(32)                            | NO   |     | NULL       |                |
+| itemId    | int(11)                                | NO   |     | NULL       |                |
+| tokens    | int(11)                                | NO   |     | NULL       |                |
+| status    | enum('processing','approved','reject') | NO   |     | processing |                |
+| createdAt | datetime                               | NO   |     | NULL       |                |
+| updatedAt | datetime                               | NO   |     | NULL       |                |
++-----------+----------------------------------------+------+-----+------------+----------------+

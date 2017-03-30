@@ -1,0 +1,114 @@
+<link rel='stylesheet' href='/public/register/register.css' />
+<script>
+    window.on(
+        'load',
+        app.checkSecure
+    );
+</script>
+<section class='register'>
+    <div class='buttons'>
+        <h4 class="center">Sign up for free.</h4>
+        <button data-action='registerMember' class="blue btn">
+            Members
+        </button>
+        <button
+            class='pinkBackground btn white blue-text'
+            data-action='registerModel'
+        >
+            Models
+        </button>
+    </div>
+    <div class="register-copy">
+        <!-- <h4 class="center">
+            Browse online cams of REAL PEOPLE.
+        </h4> -->
+        <p class="center">
+            *You must be over 18 years old to register.
+        </p>
+        <form
+            class="card"
+            data-action='api'
+            data-method='register'
+        >
+            <fieldset class='modelOnly'>
+                {{imagePhotoIDInput}}
+                {{imageModelFaceInput}}
+                <input
+                    type='text'
+                    maxlength='30'
+                    minlength='5'
+                    pattern='[^\<\>\\\/]{5,30}'
+                    title='referring username should be between 5 and 30 characters. And may not contain <,>,/,\'
+                    placeholder='referred by username'
+                    id='register-referer'
+                />
+            </fieldset>
+
+            <fieldset>
+                <input
+                    required
+                    type='text'
+                    maxlength='30'
+                    minlength='5'
+                    pattern='[^\<\>\\\/]{5,30}'
+                    title='username should be between 5 and 30 characters. And may not contain <,>,/,\'
+                    placeholder='username'
+                    id='register-username'
+                />
+                <input
+                    required
+                    type='password'
+                    maxlength='30'
+                    minlength='5'
+                    pattern='[^\<\>\\\/]{5,30}'
+                    title='password should be between 5 and 30 characters. And may not contain <,>,/,\'
+                    type='password'
+                    placeholder='password'
+                    id='register-password'
+                />
+                <input
+                    required
+                    type='password'
+                    placeholder='confirm your password'
+                    id='register-passwordConfirm'
+                />
+                <input
+                    required
+                    type='text'
+                    maxlength='30'
+                    placeholder='first name'
+                    id='register-firstName'
+                />
+                <input
+                    required
+                    type='text'
+                    placeholder='last name'
+                    id='register-lastName'
+                />
+                {{genderList}}
+                <input
+                    required
+                    type='email'
+                    placeholder='email'
+                    pattern='.+@.+\..+'
+                    title='email should contain both an @ and a .'
+                    id='register-email'
+                />
+                <input
+                    required
+                    type='date'
+                    placeholder='birthday'
+                    id='register-DOB'
+                />
+                <div class="profileImg">
+                {{profileImageInput}}
+                </div>
+            </fieldset>
+
+            <button class="signUp blue btn">
+                Sign up
+            </button>
+        </form>
+    </div>
+
+</section>

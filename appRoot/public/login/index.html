@@ -1,0 +1,30 @@
+<link rel='stylesheet' href='/public/login/login.css' />
+<script>
+    window.on(
+        'load',
+        app.checkSecure
+    );
+</script>
+<dialog class='login'>
+    <h4>Welcome</h4>
+    <form
+        data-action='api'
+        data-method='login'
+    >
+        <input
+            required
+            type='text'
+            placeholder='email or username'
+            id='login-username'
+        />
+        <input
+            required
+            type='password'
+            placeholder='password'
+            id='login-password'
+        />
+        <button class="blue btn">
+            Login
+        </button>
+    </form>
+</dialog>

@@ -1,0 +1,36 @@
+footer{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    position: fixed;
+    height:11em;
+    bottom: -12em;
+    width: 100%;
+    padding: 1em 0;
+    background:{{darkBlue}};
+    color:{{textOnColor}};
+    box-shadow:0 0 .3em {{shadowColor}};
+    transition:bottom {{transitionTime}};
+    z-index:100;
+    opacity: 0.95;
+}
+
+footer:hover{
+    bottom:0;
+    box-shadow:0 0 .5em {{shadowColor}};
+}
+
+footer nav {
+    display:flex;
+    flex-direction:column;
+}
+
+footer a {
+    color: {{linkOnColor}};
+    text-decoration: none;
+}
+
+footer .copyright{
+    height:2.5em;
+    background:{{darkBlue}};
+}

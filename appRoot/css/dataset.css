@@ -1,0 +1,67 @@
+[data-display='{{appIsDev}}']{
+    display:flex;
+}
+
+[data-display='{{notLoggedIn}}']{
+    display:flex;
+}
+
+[data-display='{{isLoggedIn}}']{
+    display:none;
+}
+
+[data-display='{{isModel}}']{
+    display:none;
+}
+
+[data-user='{{isModel}}']{
+    display:none;
+}
+
+[data-display='{{notModel}}']{
+    display:none;
+}
+
+[data-user='{{notModel}}']{
+    display:none;
+}
+
+[data-display='{{modelOnline}}']{
+    display:none;
+}
+
+[data-display='{{isConnectedToServer}}']{
+    display:none;
+}
+
+[data-display='{{notConnectedToServer}}']{
+    display:none;
+}
+
+[data-display='{{appWarning}}']{
+    color:rgb(100,100,100);
+    list-style: none;
+    margin:0;
+    padding:0;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999999999;
+    text-align:center;
+}
+
+[data-display='{{appWarning}}'] li{
+    background:rgba(235,89,89,.95);
+    padding:.5em;
+    box-shadow: 0 0 .5em {{shadowColor}};
+}
+
+[data-display='{{appWarning}}'] h4{
+    font-size: 1.5em;
+    margin:.5em;
+}
+
+[data-display='{{appWarning}}'] li div{
+    justify-content:center;
+}

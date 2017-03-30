@@ -1,0 +1,42 @@
++--------------------+-------------------------------------------------------------+------+-----+--------------+----------------+
+| Field              | Type                                                        | Null | Key | Default      | Extra          |
++--------------------+-------------------------------------------------------------+------+-----+--------------+----------------+
+| id                 | int(10) unsigned                                            | NO   | PRI | NULL         | auto_increment |
+| parentId           | int(11)                                                     | NO   |     | NULL         |                |
+| firstName          | varchar(32)                                                 | YES  |     | NULL         |                |
+| lastName           | varchar(32)                                                 | YES  |     | NULL         |                |
+| username           | varchar(32)                                                 | NO   |     | NULL         |                |
+| email              | varchar(128)                                                | NO   |     | NULL         |                |
+| address1           | varchar(64)                                                 | NO   |     | NULL         |                |
+| address2           | varchar(64)                                                 | NO   |     | NULL         |                |
+| countryId          | int(11)                                                     | NO   |     | NULL         |                |
+| cityId             | int(11)                                                     | NO   |     | NULL         |                |
+| cityName           | varchar(32)                                                 | YES  |     | NULL         |                |
+| stateId            | int(11)                                                     | NO   |     | NULL         |                |
+| stateName          | varchar(100)                                                | YES  |     | NULL         |                |
+| zip                | varchar(10)                                                 | NO   |     | NULL         |                |
+| fixPhone           | varchar(15)                                                 | NO   |     | NULL         |                |
+| mobilePhone        | varchar(15)                                                 | NO   |     | NULL         |                |
+| minPayment         | int(11)                                                     | NO   |     | 200          |                |
+| payoneer           | varchar(200)                                                | YES  |     | NULL         |                |
+| emailVerified      | tinyint(4)                                                  | NO   |     | 0            |                |
+| emailVerifyToken   | varchar(128)                                                | YES  |     | NULL         |                |
+| passwordHash       | varchar(128)                                                | YES  |     | NULL         |                |
+| passwordResetToken | varchar(128)                                                | YES  |     | NULL         |                |
+| gender             | enum('male','female','other')                               | YES  |     | NULL         |                |
+| birthdate          | date                                                        | YES  |     | NULL         |                |
+| role               | enum('member','model','studio','admin')                     | NO   |     | NULL         |                |
+| tokens             | int(11)                                                     | NO   |     | 0            |                |
+| avatar             | longtext                                                    | YES  |     | NULL         |                |
+| status             | varchar(100)                                                | NO   |     | NULL         |                |
+| accountStatus      | enum('active','suspend','notConfirmed','disable','waiting') | NO   |     | notConfirmed |                |
+| suspendReason      | text                                                        | YES  |     | NULL         |                |
+| location_id        | int(11)                                                     | YES  |     | NULL         |                |
+| bio                | text                                                        | NO   |     | NULL         |                |
+| userMeta           | text                                                        | NO   |     | NULL         |                |
+| userSettings       | text                                                        | NO   |     | NULL         |                |
+| is_social          | enum('yes','no')                                            | NO   |     | no           |                |
+| referred_by        | int(11)                                                     | YES  |     | NULL         |                |
+| createdAt          | datetime                                                    | NO   |     | NULL         |                |
+| updatedAt          | datetime                                                    | NO   |     | NULL         |                |
++--------------------+-------------------------------------------------------------+------+-----+--------------+----------------+

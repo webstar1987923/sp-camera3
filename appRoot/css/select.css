@@ -1,0 +1,15 @@
+select{
+    font-size: 1.3em;
+    padding:.5em;
+    border:none;
+    border-bottom:1px solid rgb(200,200,200);
+    background:transparent;
+    outline: none;
+    /*color:{{defaultTextColor}};*/
+    -moz-appearance: none;
+    -webkit-appearance:none;
+}
+
+select::-ms-expand {
+    display: none;
+}

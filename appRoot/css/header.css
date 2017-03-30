@@ -1,0 +1,20 @@
+header{
+    display:flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    height:2.5em;
+    /*text-transform: uppercase;*/
+    font-weight: bold;
+    /*opacity:.95;*/
+    overflow:hidden;
+    background:{{lightBlue}};
+    /*box-shadow:0 0 .4em {{shadow}};*/
+    z-index:5;
+}
+
+header a {
+    padding: 0 1em;
+    line-height: 2.5em;
+    color: {{linkOnColor}};
+    text-decoration: none;
+}

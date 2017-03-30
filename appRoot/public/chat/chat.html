@@ -1,0 +1,31 @@
+<link rel='stylesheet' href='/public/chat/chat.css' />
+<section class='chat'>
+    <ul class='chatTabs'>
+        <li data-label='chat'>
+            Room
+        </li>
+        <li data-label='users'>
+            <span id='chatMemberCount' data-count='0'>0</span> Users
+        </li>
+    </ul>
+    <ul class='log'>
+
+    </ul>
+    <ul class='users'>
+
+    </ul>
+    <form
+        class='controls'
+        data-action='webRTC',
+        data-method='send'
+    >
+        <input
+            type='text'
+            placeholder='Chat Here'
+        />
+        <button class="btn btn-flat blue white-text btn-large">
+            Send
+        </button>
+    </form>
+</section>
+<script src='/public/chat/chat.js'></script>

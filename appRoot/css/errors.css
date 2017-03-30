@@ -1,0 +1,6 @@
+.error404{
+    color: rgb(255,255,255);
+    text-shadow: 0 0 .2em rgba(0,0,0,.7);
+    text-align: center;
+    margin-top: 3em;
+}

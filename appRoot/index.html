@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <!-- <meta http-equiv="Refresh" content="0; url=https://www.scentedpansy.com/used_panties"> -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+        <title>Scented Pansy Cams</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel='stylesheet' href = '/css/basic.css' />
+        <link rel='stylesheet' href = '/css/errors.css' />
+        <link rel='stylesheet' href = '/css/button.css' />
+        <link rel='stylesheet' href = '/css/siteTop.css' />
+        <link rel='stylesheet' href = '/css/header.css' />
+        <link rel='stylesheet' href = '/css/footer.css' />
+        <link rel='stylesheet' href = '/css/dialog.css' />
+        <link rel='stylesheet' href = '/css/input.css' />
+        <link rel='stylesheet' href = '/css/select.css' />
+        <link rel='stylesheet' href = '/css/form.css' />
+        <link rel='stylesheet' href = '/css/dataset.css' />
+        <link rel='stylesheet' href = '/css/materialize.css' />
+
+        <script src="https://simplewebrtc.com/latest-v2.js"></script>
+        <script src="https://checkout.stripe.com/checkout.js"></script>
+        <script src='/bower_components/js-message/js-message-vanilla.js'></script>
+        <script src='/bower_components/event-pubsub/event-pubsub-browser.js'></script>
+
+        <script src='/js/webRTC.js'></script>
+        <script src='/js/JSS.js'></script>
+        <script src='/js/api.js'></script>
+        <script src='/js/clickHandler.js'></script>
+        <script src='/js/changeHandler.js'></script>
+        <script src='/js/submitHandler.js'></script>
+        <script src='/js/keyUpHandler.js'></script>
+        <script src='/js/app.js'></script>
+    </head>
+    <body>
+        <ul data-display='{{appWarning}}'>
+
+        </ul>
+        <section class='siteTop'>
+            <h2 data-action='go' data-href='/' style="text-transform:none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                  <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="0%" y2="100%">
+                      <stop offset="0%" style="stop-color:#039be6;stop-opacity:1" />
+                      <stop offset="100%" style="stop-color:#6c6bc6;stop-opacity:1" />
+                    </linearGradient>
+                  </defs>
+                  <text fill="url(#grad1)" font-size="20" x="10" y="30">
+                Scented Pansy Cams</text>
+                </svg>
+            </h2>
+            <div
+
+                class='loginOptions'
+                data-display='{{notLoggedIn}}'
+            >
+                <a href='https://{{domainName}}{{registerLink}}'>
+                    Sign up free
+                </a>
+                <a href='https://{{domainName}}{{loginLink}}'>
+                    <button class="blue btn">
+                        Login
+                    </button>
+                </a>
+            </div>
+            <div
+                class='userInfo'
+                data-display='{{isLoggedIn}}'
+            >
+                <p class='userData' >
+                    <img
+                        data-display='{{isLoggedIn}}'
+                        src='{{defaultImg}}'
+                    />
+                </p>
+                <p class='userTokens' >0 Tokens</p>
+                <button
+                    class="blue btn-large btn-flat"
+                    data-action='api'
+                    data-method='logout'
+                >
+                    Logout
+                </button>
+            </div>
+        </section>
+        <header class="blue-gradient-left">
+            <!-- <a
+                title='see all live streaming webcam models on {{siteName}}'
+                href='{{modelsOnlineLink}}'
+            >
+                Live Models
+            </a> -->
+            <a
+                title='See all {{siteName}} Cam Models'
+                href='{{modelsLink}}'
+            >
+                All Models
+            </a>
+            <a
+                title='Stream your webcam live and earn money'
+                data-display='{{isModel}}'
+                href='{{broadcastLink}}'
+            >
+                Broadcast Yourself
+            </a>
+            <a
+                class="indigo"
+                title='get 50 free tokens to get private time with live streaming models'
+                data-display='{{notLoggedIn}}'
+                href='{{registerLink}}?member'
+            >50 Free Tokens</a>
+            <a
+                class="indigo"
+                title='get 50 free tokens to get private time with live streaming models'
+                data-display='{{isLoggedIn}}'
+                data-user='{{notModel}}'
+                href='{{tokensLink}}'
+            >Buy Tokens</a>
+        </header>
+        {{content}}
+        <footer class="blue-gradient-up">
+            <div class='notice' data-display='{{notConnectedToServer}}'>
+                Connecting to server...
+            </div>
+            <nav>
+
+                <a href='/profilelist/?cam-model'>Chatting</a>
+                <a href='{{modelsLink}}?all'>All Models</a>
+                <a href='/static/how-to-be-a-model.html'>How To Become A Model</a>
+                <a href='/static/faq.html'>FAQ</a>
+                <!-- <a href='{{modelsLink}}'>Online Models</a> -->
+                <!-- <a href='{{broadcastLink}}'>Broadcast yourself</a> -->
+                <!-- <a href='{{registerLink}}'>Register</a> -->
+                <!-- <a href='{{loginLink}}'>Login</a> -->
+                <a href='/static/terms-and-conditions.html'>Terms &amp; Conditions</a>
+                <a href='/static/privacy-policy.html'>Privacy Policy</a>
+
+            </nav>
+            <div>
+                <h5>Support</h5>
+
+                <span style='color: #0000FF; text-decoration: underline; cursor: pointer;' id='phplive_btn_1471556938' onclick='phplive_launch_chat_0(0)'><img src='https://t2.phplivesupport.com/arayer/pics/icons/icon_offline.gif' border='0' alt='' title=''></span>
+                <script type='text/javascript'>
+                    (function() {
+                    var phplive_e_1471556938 = document.createElement('script') ;
+                    phplive_e_1471556938.type = 'text/javascript' ;
+                    phplive_e_1471556938.async = true ;
+                    phplive_e_1471556938.src = 'https://t2.phplivesupport.com/arayer/js/phplive_v2.js.php?v=0|1471556938|2|' ;
+                    document.getElementById('phplive_btn_1471556938').appendChild( phplive_e_1471556938 ) ;
+                    })() ;
+                </script>
+            </div>
+        </footer>
+        <dialog class='Modal18'>
+            <h1>
+                Are you over 18?
+            </h1>
+            <div>
+                <button data-action='18+' class="btn blue white-text">
+                    yes
+                </button>
+                <button class="btn white blue-text">
+                    No
+                </button>
+            </div>
+        </dialog>
+    </body>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-81439540-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+</html>

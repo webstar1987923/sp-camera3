@@ -1,0 +1,30 @@
++------------------+---------------------------------------------------------------------+------+-----+-------------+----------------+
+| Field            | Type                                                                | Null | Key | Default     | Extra          |
++------------------+---------------------------------------------------------------------+------+-----+-------------+----------------+
+| id               | int(10) unsigned                                                    | NO   | PRI | NULL        | auto_increment |
+| user_id          | int(11)                                                             | NO   |     | NULL        |                |
+| category_id      | int(11)                                                             | NO   |     | NULL        |                |
+| sex              | enum('male','female','other')                                       | YES  |     | NULL        |                |
+| age              | int(11)                                                             | NO   |     | NULL        |                |
+| sexualPreference | enum('lesbian','transsexual','female','no_comment','male','couple') | NO   |     | no_comment  |                |
+| ethnicity        | enum('white','asian','black','indian','latin','not_telling')        | NO   |     | not_telling |                |
+| eyes             | enum('blue','brown','green','not_telling')                          | NO   |     | not_telling |                |
+| hair             | enum('brown','blonde','black','red')                                | YES  |     | NULL        |                |
+| pubic            | enum('trimmed','shaved','hairy','no_comment')                       | YES  |     | NULL        |                |
+| languages        | varchar(255)                                                        | NO   |     | NULL        |                |
+| height           | int(11)                                                             | YES  |     | NULL        |                |
+| bust             | enum('large','medium','small','no_comment')                         | NO   |     | NULL        |                |
+| width            | varchar(255)                                                        | YES  |     | NULL        |                |
+| pubit            | enum('trimmed','shaved','hairy','no_comment')                       | NO   |     | no_comment  |                |
+| weight           | varchar(200)                                                        | NO   |     | NULL        |                |
+| country_id       | int(11)                                                             | YES  |     | NULL        |                |
+| state_id         | int(11)                                                             | YES  |     | NULL        |                |
+| city_id          | int(11)                                                             | YES  |     | NULL        |                |
+| state_name       | varchar(100)                                                        | NO   |     | NULL        |                |
+| city_name        | varchar(32)                                                         | NO   |     | NULL        |                |
+| about_me         | text                                                                | NO   |     | NULL        |                |
+| blog             | varchar(255)                                                        | NO   |     | NULL        |                |
+| blogname         | varchar(100)                                                        | NO   |     | NULL        |                |
+| createdAt        | datetime                                                            | NO   |     | NULL        |                |
+| updatedAt        | datetime                                                            | NO   |     | NULL        |                |
++------------------+---------------------------------------------------------------------+------+-----+-------------+----------------+

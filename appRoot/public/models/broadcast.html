@@ -1,0 +1,28 @@
+<link rel='stylesheet' href='/public/models/models.css' />
+<section
+    class='broadcast'
+    data-display='{{isModel}}'
+>
+    <aside
+        class='modelCams'
+        data-display='{{isModel}}'
+    >
+        <video id='userVideo'></video>
+        <button
+            class='start'
+            data-action='webRTC'
+            data-method='start'
+        >
+            Start broadcasting
+        </button>
+        <button
+            class='stop btn blue'
+            data-action='webRTC'
+            data-method='stop'
+        >
+            Stop streaming
+        </button>
+    </aside>
+    {{chat}}
+</section>
+<script src='/public/models/broadcast.js'></script>

@@ -1,0 +1,38 @@
+{
+  "name": "event-pubsub",
+  "description": "Pubsub events for Node and the browser allowing event scoping and multiple scopes. Easy for any developer level. No frills, just high speed pubsub events!",
+  "main": "event-pubsub.js",
+  "authors": [
+    "Brandon Nozaki Miller"
+  ],
+  "license": "DBAD",
+  "keywords": [
+    "event",
+    "events",
+    "pubsub",
+    "node",
+    "browser"
+  ],
+  "homepage": "https://github.com/RIAEvangelist/event-pubsub",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "version": "2.2.0",
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.0",
+    "commit": "f955b96dd24dcb78d9b8e7a8598a488e00cd3eea"
+  },
+  "_source": "https://github.com/RIAEvangelist/event-pubsub.git",
+  "_target": "^2.2.0",
+  "_originalSource": "event-pubsub"
+}

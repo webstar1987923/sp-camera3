@@ -1,0 +1,37 @@
+{
+  "name": "sp-cams3",
+  "version": "0.0.1",
+  "description": "adult cams",
+  "main": "server.js",
+  "dependencies": {
+    "bufferutil": "^1.2.1",
+    "event-pubsub": "^2.2.0",
+    "forever": "^0.15.2",
+    "js-base64-file": "^1.0.1",
+    "js-message": "^1.0.5",
+    "mongodb": "^2.2.9",
+    "node-http-server": "^6.2.1",
+    "nodemailer": "^2.6.0",
+    "range-class-js": "^1.0.1",
+    "stripe": "^4.10.0",
+    "utf-8-validate": "^1.2.1",
+    "ws": "^1.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "echo 'Checkinng Mongo'& mongod& node signalmaster/server& forever -a start api.js& node server.js& echo STARTED",
+    "deploy": "killall screen& screen -dmS mongo mongod& screen -dmS signalmaster node signalmaster/server& screen -dmS api node api& screen -dmS server node server& echo STARTED"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/squonkish/sp-cams3.git"
+  },
+  "keywords": [
+    "adult",
+    "cams"
+  ],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/squonkish/sp-cams3#readme"
+}

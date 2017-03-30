@@ -1,0 +1,15 @@
+{
+  "isDev": false,
+  "server": {
+    "port": 4443,
+    "/* secure */": "/* whether this connects via https */",
+    "secure": true,
+    "key":"./certs/private.key.pem",
+    "cert": "./certs/scentedpansycams.crt",
+    "password": null
+  },
+  "rooms": {
+    "/* maxClients */": "/* maximum number of clients per room. 0 = no limit */",
+    "maxClients": 0
+  }
+}

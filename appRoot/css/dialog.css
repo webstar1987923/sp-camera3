@@ -1,0 +1,46 @@
+dialog{
+    padding: 2em;
+    display: block;
+    /*width: 20em;*/
+    border: none;
+    border-radius: .3em;
+    color:#333;
+    /*margin: 1.5em calc(50% - 12em);*/
+    position: fixed;
+    top: 8em;
+    box-shadow: 0 0 2em {{shadowColor}};
+    background:rgba(255,255,255,.96);
+    text-align:center;
+    transition:width {{transitionTime}}, margin {{transitionTime}}, height {{transitionTime}},top {{transitionTime}};
+    z-index:100;
+}
+
+dialog h1{
+    margin:0 0 1em;
+}
+
+dialog button{
+    font-size:1.2em;
+    margin:.3em;
+    padding:.5em 1.5em;
+}
+
+dialog form{
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background:transparent;
+}
+
+dialog.Modal18{
+    display:none;
+}
+
+@media all and (max-width : 1024px)  {
+    dialog{
+        width:100%;
+        margin:0;
+        height:100%;
+        top:0;
+    }
+}

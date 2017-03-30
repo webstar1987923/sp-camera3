@@ -1,0 +1,31 @@
+input{
+    font-size: 1.3em;
+    padding:.5em;
+    border:none;
+    margin:.5em auto;
+    border-bottom:1px solid white;
+    background:transparent;
+    /*border-radius:.5em;*/
+    text-align: center;
+    outline: none;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select:text;
+    /*color:{{defaultTextColor}};*/
+
+}
+
+textarea{
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select:text;
+    border:none;
+    padding:.5em;
+    box-shadow: inset 0 0 .3em {{shadowColor}};
+}
+
+input[type='file']{
+    display:none;
+}

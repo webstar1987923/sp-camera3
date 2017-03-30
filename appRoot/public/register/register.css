@@ -1,0 +1,123 @@
+body{
+    background-image: url(/img/img-hotel-girl.jpg);
+    background-size:cover;
+    background-blend-mode: normal;
+}
+
+.register{
+
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:7em 0 3em;
+    color: rgb(255,255,255);
+    text-shadow: 0 0 .3em {{shadowColor}};
+    transition:padding {{transitionTime}};
+}
+
+.register.showForm{
+    padding:1.5em 0;
+}
+
+.register.showForm > div > h1,
+.register.showForm > div > p{
+    display:none;
+}
+
+.register #register-referer{
+    /*background:rgb(255,255,255);*/
+}
+
+.register select,
+.register input{
+    width:100%;
+    text-align:left;
+    width:calc(100% - 1em);
+    /*background: rgb(255,255,255,.9);*/
+}
+
+.register select{
+    width:100%;
+}
+
+.register form{
+    display:none;
+    width:29em;
+    transition:width {{transitionTime}}, margin {{transitionTime}};
+}
+
+.register form button{
+    width:100%;
+    margin:1em 0;
+}
+
+.register.showForm form{
+    display:block;
+    /*border:1px solid white;*/
+}
+
+.register form img{
+    height:130px;
+}
+
+.register .modelOnly{
+    display:none;
+    /*background: rgba(233, 30, 99,.2);*/
+    /*border-radius: .5em;*/
+}
+
+.register form.showModelForm .modelOnly{
+    display:block;
+}
+/*.register form.showModelForm .modelOnly div{
+    display:flex;
+    flex-direction: row;
+}*/
+.register .buttons{
+    display:flex;
+    flex-direction:column;
+    max-width: 50%;
+}
+
+.register button{
+    /*font-size: 1.3em;
+    width:11em;*/
+    margin:1.3em 1em;/*
+    font-weight: normal;
+    transition:width {{transitionTime}}, margin {{transitionTime}};*/
+}
+
+@media all and (max-width : 1024px) {
+    .register{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+    }
+
+    .register form{
+        width:100%;
+        margin:0;
+    }
+
+    .register button{
+        width:100%;
+        margin:1em 0;
+    }
+}
+.register .profileImg div{
+    display: flex;
+    flex-direction: row;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #333;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #333;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #333;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #333;
+}

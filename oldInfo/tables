@@ -1,0 +1,45 @@
++---------------------+
+| Tables_in_xcams     |
++---------------------+
+| attachment          |
+| blacklist           |
+| categories          |
+| chatmessages        |
+| chatthreads         |
+| chatthreadusers     |
+| cities              |
+| comments            |
+| countries           |
+| countries1          |
+| documents           |
+| download            |
+| dreams              |
+| earnings            |
+| earningsettings     |
+| failed_jobs         |
+| favorites           |
+| following           |
+| galleries           |
+| jobs                |
+| likes               |
+| messageconversation |
+| messagereply        |
+| messages            |
+| migrations          |
+| notification        |
+| pages               |
+| paymentpackages     |
+| payments            |
+| paymentsettings     |
+| paymenttokens       |
+| performer           |
+| performerchats      |
+| posts               |
+| schedules           |
+| settings            |
+| states              |
+| timezone            |
+| users               |
+| videos              |
+| zone                |
++---------------------+

@@ -1,0 +1,23 @@
+{
+  "name": "sp-cams3",
+  "description": "adult cams",
+  "main": "server.js",
+  "license": "ISC",
+  "keywords": [
+    "adult",
+    "cams"
+  ],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "js-message": "^1.0.5",
+    "event-pubsub": "^2.2.0"
+  }
+}
